@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: mame markdown link to file
+# key: mdlink
+# --
+
+```{r results='asis'}
+links = bcbioBase::copyToDropbox("$1", dropboxDir)
+link = gsub("dl=0", "dl=1", links[[1]]\$url)
+desc = "$2"
+markdownLink(desc, link, "$3")
+```

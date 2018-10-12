@@ -1,0 +1,34 @@
+# key: rh
+# name: rmarkdown-header
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+---
+title: ISC and EB disambiguation
+description: This is an attempt to separate out ISC and EBs using known markers
+category: research
+subcategory: rnaseq
+tags: [singlecell_rnaseq, differential_expression, ZINB-WaVE]
+Principal Investigator: Hubert Perrimon
+Researcher: Ruei-Jiun Hung
+Experiment: Drosophila gut single-cell RNA-seq [hbc02022]
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    theme: readable
+    df_print: paged
+    fig_width: 8.5
+    fig_height: 5
+---
+
+\`\`\`{r set-publication-theme, echo=FALSE, cache=FALSE}
+ggplot2::theme_set(ggpubr::theme_pubr(base_size=10))
+\`\`\`
+
+\`\`\`{r setup, echo = FALSE, cache = FALSE}
+knitr::opts_chunk$set(dev = c('png', 'cairo_pdf'), 
+                      fig.align = 'center', fig.height = 5, fig.width = 8.5, 
+                      pdf.options(encoding = "ISOLatin9.enc"),
+                      fig.path='figures/')
+\`\`\`
