@@ -7,7 +7,12 @@
 
 ;;; Code:
 
-(defconst org-roryk-packages
-  '(org))
+(defconst org-roryk-packages 
+  '()
+)
+
+(defun init-org-roryk ()
+  (use-package org)
+) 
 
 ;;; packages.el ends here
